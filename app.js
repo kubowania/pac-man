@@ -214,8 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //check for a game over
   function checkForGameOver() {
-    if (squares[pacmanCurrentIndex].classList.contains('pac-man') &&
-      squares[pacmanCurrentIndex].classList.contains('ghost') &&
+    if (squares[pacmanCurrentIndex].classList.contains('ghost') &&
       !squares[pacmanCurrentIndex].classList.contains('scared-ghost')) {
       ghosts.forEach(ghost => clearInterval(ghost.timerId))
       document.removeEventListener('keyup', movePacman)

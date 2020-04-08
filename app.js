@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ghosts.forEach(ghost => ghost.isScared = true)
       setTimeout(unScareGhosts, 10000)
       squares[pacmanCurrentIndex].classList.remove('power-pellet')
-      squares[pacmanCurrentIndex].classList.add('empty')
     }
   }
 

@@ -1,7 +1,7 @@
 # pac-man
 Vanilla javaScript Game with HTML and CSS
 
-A super simple walkthourgh to coding Pac-Man in vanilla JavaScript, HTML and CSS.
+A super simple walkthourgh to coding Pac-Man in vanilla JavaScript, HTML and CSS. View [here](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw) 
 
 I have kept the styling super simple for you to take and make your own. Please do credit me if so :).
 

@@ -3,7 +3,7 @@ Vanilla javaScript Game with HTML and CSS
 
 A super simple walkthourgh to coding Pac-Man in vanilla JavaScript, HTML and CSS. View [here](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw) 
 
-I have kept the styling super simple for you to take and make your own. Please do credit me if so :).
+I have kept the styling at a bare miniumum for you to go wild and make it your own. Please tag me as I would LOVE to see your game!!!
 
 In this game I show you how to make Pac-Man move around the grid while avoiding walls, show you how to use the constructor method for all four ghosts to apply their unque characterisitcs to each one, including at what speed they move at. Clyde obviously being the slowest.
 

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  console.log(process.env.SECRET_NAME)
+
   const scoreDisplay = document.getElementById('score')
   const width = 28
   let score = 0

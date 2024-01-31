@@ -171,7 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
             this.currentIndex = startIndex
             this.isScared = false
             this.timerId = NaN
-
         }
     }
 

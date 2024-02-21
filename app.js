@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ) {
                     pacmanCurrentIndex -= 1
                 }
-                if (squares[pacmanCurrentIndex - 1] === squares[363]) {
+                if ((pacmanCurrentIndex - 1) === 363) {
                     pacmanCurrentIndex = 391
                 }
                 break
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     pacmanCurrentIndex += 1
                 }
                 if (
-                    squares[pacmanCurrentIndex + 1] === squares[392]
+                    (pacmanCurrentIndex + 1) === 392
                 ) {
                     pacmanCurrentIndex = 364
                 }
@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.currentIndex = startIndex
             this.isScared = false
             this.timerId = NaN
+
         }
     }
 
@@ -183,10 +184,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
 
     //draw my ghosts onto the grid
-    ghosts.forEach(ghost => {
-        squares[ghost.currentIndex].classList.add(ghost.className)
-        squares[ghost.currentIndex].classList.add("ghost")
-    })
+    ghosts.forEach(ghost =>
+        squares[ghost.currentIndex].classList.add(ghost.className, "ghost"))
 
     //move ghosts randomly
     ghosts.forEach(ghost => moveGhost(ghost))
@@ -213,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //if the ghost is currently scared and pacman is on it
             if (ghost.isScared && squares[ghost.currentIndex].classList.contains("pac-man")) {
+                ghost.isScared = false
                 squares[ghost.currentIndex].classList.remove(ghost.className, "ghost", "scared-ghost")
                 ghost.currentIndex = ghost.startIndex
                 score += 100
